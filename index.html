@@ -3,63 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Íris' Portfolio</title>
+    <title>Íris Evaristo - Home</title>
     
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+<!-- TOP BAR -->
     <nav class="top-bar">
         <a href="#home">Home</a>
+        <a href="#contact-me">Contact Me</a>
         <a href="#about-me">About Me</a>
         <a href="projects.html">Projects</a>
+        <a href="cv.pdf" download>Download CV</a>
     </nav>
 
+<!-- HOME SECTION -->
     <main class="main-content">
-        
         <section id="home" class="home-section">
             <img src="images/portfolio-mainpage-pink.png" alt="Íris Evaristo" class="main-image">
         </section>
 
-<section id="about-me" class="about-me-section">
+<!-- contact ME SECTION -->
+        <section id="contact-me" class="contact-me-section">
+            <img src="images/stars1.png" class="stars1-trail-overlay">
             <div class="aligned-content">
-                <div class="about-me-header">
-                    <h2>Hi, I'm Íris</h2>
-                    <img src="images/minha-foto.jpg" alt="Profile Picture" class="profile-image">
+                <div class="contact-grid">
+                    <div class="contact-left">
+                        <h2>Hello,<br>I'm Íris</h2>
+                        <p>I'm a Computer Science and Engineering student at Instituto Superior Técnico.
+                        I'm creative, organized, and passionate contact learning in general, so coding is my happy place.</p>
+                    </div>
+                    <div class="contact-right">
+                        <img src="images/profile-photo.png" alt="Profile Picture" class="profile-photo">
+                        <ul class="info-list">
+                            <li>
+                                <img src="images/icon-location.png" alt="Location" class="info-icon">
+                                <span>Lisbon, Portugal</span>
+                            </li>
+                            <li>
+                                <img src="images/icon-email.png" alt="Email" class="info-icon">
+                                <a href="mailto:ievaristo.pt@gmail.com">Email</a>
+                            </li>
+                            <li>
+                                <img src="images/icon-github.png" alt="GitHub" class="info-icon">
+                                <a href="https://github.com/irisgevaristo" target="_blank">GitHub</a>
+                            </li>
+                            <li>
+                                <img src="images/icon-linkedin.png" alt="LinkedIn" class="info-icon">
+                                <a href="https://linkedin.com/in/íris-evaristo/" target="_blank">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                
-                <p>I'm a Computer Science and Engineering student at Instituto Superior Tecnico.
-                    I'm creative, organized, and passionate about learning in general, so coding is my happy place.</p>
             </div>
         </section>
 
-        <section id="skills" class="skills-section">
+<!-- about-me SECTION -->
+        <section id="about-me" class="about-me-section">
+            <img src="images/stars2.png" class="stars2-trail-overlay">
             <div class="aligned-content">
-                <h2>My Skills</h2>
-                <p>Throughout my education, I developed skills in:</p>
-                <ul class="skills-list">
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>SQL</li>
-                    <li>C / C++</li>
-                    <li>HTML & CSS</li>
-                    <li>Prolog</li>
-                    <li>Assembly</li>
-                    <li>Figma</li>
-                </ul>
-                <p>Check out the projects where I used them:</p>
-                <a href="projects.html" class="projects-button">Projects</a>
+                <div class="about-grid">
+                    <div class="about-left">
+                        <!-- EDUCATION -->
+                        <div class="education-block">
+                            <h3>Education</h3>
+                            <div class="education-timeline">
+                                
+                                <!-- Item 1 -->
+                                <div class="timeline-item">
+                                    <div class="timeline-marker">
+                                        <span class="timeline-star">✦</span>
+                                        <div class="timeline-line"></div>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <span class="timeline-year">2021-2024</span>
+                                        <div class="timeline-details">
+                                            <h4>Escola Secundária João de Deus</h4>
+                                            <p>Science and Technology</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Item 2 -->
+                                <div class="timeline-item">
+                                    <div class="timeline-marker">
+                                        <span class="timeline-star">✦</span>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <span class="timeline-year">2024-2026</span>
+                                        <div class="timeline-details">
+                                            <h4>Instituto Superior Técnico, Universidade de Lisboa</h4>
+                                            <p>Computer Science and Engineering (Engenhaira Informática e de Computadores)</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- HOBBIES -->
+                        <div class="hobbies-block">
+                            <h3>Hobbies & Interests</h3>
+                            <div class="hobbies-container">
+                                <div class="hobby-item">
+                                    <img src="images/reading.png" alt="Reading" class="hobby-icon">
+                                    <p>Reading</p>
+                                </div>
+                                <div class="hobby-item">
+                                    <img src="images/crocheting.png" alt="Crocheting" class="hobby-icon">
+                                    <p>Crochet</p>
+                                </div>
+                                <div class="hobby-item">
+                                    <img src="images/weightlifting.png" alt="Weightlifing" class="hobby-icon">
+                                    <p>Weightlifting</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-right">
+                        
+                        <!-- TECHNICAL SKILLS -->
+                        <div class="tech-skills-block">
+                            <h3>Technical Skills</h3>
+                            <ul class="skills-list">
+                                <li>Python</li>
+                                <li>Java</li>
+                                <li>SQL</li>
+                                <li>C / C++</li>
+                                <li>HTML & CSS</li>
+                                <li>Prolog</li>
+                                <li>Assembly</li>
+                                <li>Figma</li>
+                            </ul>
+                        </div>
+
+                        <!-- LANGUAGES -->
+                        <div class="languages-block">
+                            <h3>Languages</h3>
+                            <div class="languages-container">
+                                <div class="lang-item">
+                                    <h4>Portuguese</h4>
+                                    <p>Native</p>
+                                </div>
+                                <div class="lang-item">
+                                    <h4>English</h4>
+                                    <p>Fluent</p>
+                                </div>
+                                <div class="lang-item">
+                                    <h4>German</h4>
+                                    <p>Intermidiate</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- PROJECTS -->
+                <div class="about-footer">
+                    <a href="projects.html" class="projects-button">Check out my projects!</a>
+                </div>
+
             </div>
         </section>
-
-
     </main>
-
-    <div class="bottom-bar">
-        <a href="https://linkedin.com/in/íris-evaristo/" target="_blank" class="floating-button">LinkedIn</a>
-        <a href="mailto:ievaristo.pt@gmail.com" class="floating-button">E-mail</a>
-        <a href="cv.pdf" download class="floating-button">Download CV</a>
-    </div>
-
 </body>
 </html>
