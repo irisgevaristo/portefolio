@@ -93,6 +93,32 @@ body {
     pointer-events: none;
 }
 
+/* --- CONFIGURAÇÃO DO EFEITO POWERPOINT WIPE --- */
+.stars1-trail-overlay, .stars2-trail-overlay {
+    opacity: 0;
+    /* Corta a imagem de baixo para cima (0% visível) */
+    clip-path: inset(0 0 100% 0); 
+    /* Suaviza a revelação ao longo de 1.5 segundos */
+    transition: opacity 1.5s ease, clip-path 1.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* --- CLASSE QUE ATIVA A ANIMAÇÃO (A SER INJETADA PELO JS) --- */
+.stars1-trail-overlay.reveal-wipe, 
+.stars2-trail-overlay.reveal-wipe {
+    opacity: 1;
+    clip-path: inset(0 0 0 0); /* Revela a imagem completamente até ao fundo */
+}
+
+/* O primeiro caminho espera 1 segundo após a página abrir (se a secção já estiver visível) */
+.stars1-trail-overlay.reveal-wipe {
+    transition-delay: 0s;
+}
+
+/* O segundo caminho ativa instantaneamente assim que entras na secção dele */
+.stars2-trail-overlay.reveal-wipe {
+    transition-delay: 0s;
+}
+
 .aligned-content {
     max-width: 1000px;
     width: 100%;
@@ -245,7 +271,7 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 135px;
+    gap: 80px;
 }
 
 .about-left h3, .about-right h3 {
@@ -394,10 +420,8 @@ body {
     margin-top: 60px;
 }
 
-.about-footer p {
-    font-size: 1.1rem;
-    color: #f0b5ca;
-    margin-bottom: 15px;
+.about-footer a {
+    font-family: Georgia, serif;
 }
 
 .projects-button {
